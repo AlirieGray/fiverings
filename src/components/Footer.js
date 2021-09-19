@@ -9,7 +9,7 @@ const Footer = () => {
           <div> © 2021 5 Rings Pictures </div>
         </div>
         <div className="socialLinks"> 
-          <div> SOCIAL </div>
+          <div style={{marginBottom: "10px", color: "rgba(255,255,255,.6)"}}> SOCIAL </div>
           <div> Blog </div>
           <div> Twitter </div>
           <div> Facebook </div>
