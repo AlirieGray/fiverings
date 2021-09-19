@@ -7,7 +7,6 @@ const TopBarLinks = () => {
       <TopBarLink name="About"/>
       <TopBarLink name="Portfolio"/>
       <TopBarLink name="Blog"/>
-      <TopBarLink name="Store"/>
       <TopBarLink name="Contact"/>
     </div>
   )
