@@ -1,19 +1,14 @@
 import React from "react"
 import TopBarLink from "./TopBarLink"
 
-const TopBarLinks = ({ styles }) => {
-  const topBarLinksStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-  }
-
+const TopBarLinks = () => {
   return (
-    <div style={topBarLinksStyle}>
-      <TopBarLink styles={styles} name="About"/>
-      <TopBarLink styles={styles} name="Portfolio"/>
-      <TopBarLink styles={styles} name="Blog"/>
-      <TopBarLink styles={styles} name="Store"/>
-      <TopBarLink styles={styles} name="Contact Us"/>
+    <div className="topBarLinks">
+      <TopBarLink name="About"/>
+      <TopBarLink name="Portfolio"/>
+      <TopBarLink name="Blog"/>
+      <TopBarLink name="Store"/>
+      <TopBarLink name="Contact Us"/>
     </div>
   )
 }

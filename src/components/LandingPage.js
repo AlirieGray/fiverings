@@ -1,34 +1,32 @@
 
-import React from "react";
+import React from "react"
+import { Carousel } from 'react-responsive-carousel'
+import carouselStyles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import imgOne from '../images/c_one.jpg'
+import imgTwo from '../images/c_two.jpg'
+import imgThree from '../images/c_three.jpg'
 
 const LandingPage = ({ styles }) => {
-  const dummyPost = {
-    title: `Here's a blog post title`,
-    summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  };
 
-  const posts = Array(20).fill(dummyPost);
-
-  const contentStyle = {
-    paddingTop: styles.topBarHeight + 20,
-    paddingRight: 20,
-    paddingBottom: styles.footerMenuHeight + 20,
-    paddingLeft: 20
-  };
 
   return (
-    <div style={contentStyle}>
-      {posts.map((post, i) => {
-        return (
-          <div key={i} style={{ marginBottom: 40 }}>
-            <h2 style={{ marginBottom: 0 }}>{post.title}</h2>
-            <p>{post.summary}</p>
-          </div>
-        );
-      })}
+    <div className="landingContent">
+      {/* <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}> 
+        <div>
+          <img src={imgOne} />
+          <p className="legend">Legend One</p>
+        </div>
+        <div>
+          <img src={imgTwo}/>
+          <p className="legend">Legend Two</p>
+        </div>
+        <div>
+          <img src={imgThree} />
+          <p className="legend">Legend Three</p>
+        </div>
+      </Carousel> */}
     </div>
-  );
-};
+  )
+}
 
 export default LandingPage;

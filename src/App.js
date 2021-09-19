@@ -13,23 +13,11 @@ class App extends Component {
   }
 
   render() {
-    const styles = {
-      white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-      black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-      topBarHeight: 100,
-      footerHeight: 50
-    }
 
     return (
-      <div
-        style={{
-          backgroundColor: styles.black(0.05),
-          minHeight: "100vh",
-          position: "relative"
-        }}
-      >
-        <TopBar styles={styles} />
-        <LandingPage styles={styles} />
+      <div className="contentWrapper">
+        <TopBar  />
+        <LandingPage />
       </div>
     )
   }
