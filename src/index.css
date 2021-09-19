@@ -1,18 +1,15 @@
-html {
-  margin: 0;
-  padding: 0;
-}
 
-body {
+
+html, body {
   margin: 0;
   padding: 0;
-  height: "100vh";
+  height: 100%;
+  min-height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
   
 }
 
@@ -22,27 +19,34 @@ code {
 }
 
 .contentWrapper {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-} 
-
-.landingContent {
-  flex-grow: 1;
-  overflow-y: auto;
 }
 
 .topBar {
   height: 120px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
   background-color: rgba(0,0,0,.85);
   border-bottom: 1px solid;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 24px;
+  font-size: 22px;
+  max-height: 100px;
 }
 
+.landingContent {
+  padding-top: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  width: 100%;
+}
+
+
 .logo {
-  font-size: 36px !important;
+  font-size: 40px !important;
+  padding-left: 20px;
 }
 
 .topBarWrapper {
@@ -59,11 +63,6 @@ code {
 .topBarLinks {
   margin: 1em 0 .5em;
   text-align: center;
-    /* display: "flex";
-    margin-left: "auto";
-    flex-direction: "row";
-    justify-content: "space-between";
-    align-items: center; */
 }
 
 .topBarLink {

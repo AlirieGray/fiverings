@@ -11,20 +11,21 @@ const LandingPage = ({ styles }) => {
 
   return (
     <div className="landingContent">
-      {/* <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}> 
+      <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}> 
         <div>
           <img src={imgOne} />
-          <p className="legend">Legend One</p>
+          <p className="legend">Portfolio Item One</p>
         </div>
         <div>
           <img src={imgTwo}/>
-          <p className="legend">Legend Two</p>
+          <p className="legend">Portfolio Item Two</p>
         </div>
         <div>
           <img src={imgThree} />
-          <p className="legend">Legend Three</p>
+          <p className="legend">Portfolio Item Three</p>
         </div>
-      </Carousel> */}
+      </Carousel>
+  
     </div>
   )
 }
