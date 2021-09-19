@@ -167,11 +167,19 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 1080px;
 }
 
 .aboutSection {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .founderBio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .portrait {
@@ -183,10 +191,24 @@ code {
 
 .footer {
   background-color: rgb(0,0,0);
+  color: rgba(255,255,255, .7);
   min-height: 100px;
+  padding: 50px;
+  width: 100%;
+}
+
+.footerLogo {
+  font-size: 22px;
+}
+
+.footerContainer {
   display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
 }
 
 .socialLinks {
   display: flex;
+  flex-direction: column;
+  margin-right: 100px;
 }

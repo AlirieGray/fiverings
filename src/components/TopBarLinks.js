@@ -8,8 +8,9 @@ flex-flow: row nowrap;
 
   @media (max-width: 1080px) {
     flex-flow: column nowrap;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(25, 25, 25);
     padding-right: 20px;
+    padding-left: 5px;
     position: fixed;
     top: 0;
     right: 0;
