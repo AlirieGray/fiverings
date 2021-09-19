@@ -8,7 +8,7 @@ const TopBarLinks = () => {
       <TopBarLink name="Portfolio"/>
       <TopBarLink name="Blog"/>
       <TopBarLink name="Store"/>
-      <TopBarLink name="Contact Us"/>
+      <TopBarLink name="Contact"/>
     </div>
   )
 }

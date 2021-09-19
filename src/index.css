@@ -21,6 +21,7 @@ code {
 .contentWrapper {
   display: flex;
   flex-direction: column;
+  background-color: rgba(0,0,0,.1)
 }
 
 .topBar {
@@ -29,7 +30,7 @@ code {
   z-index: 1000;
   width: 100%;
   background-color: rgba(0,0,0,.85);
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgb(0,0,0);
   font-weight: bold;
   color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
@@ -37,7 +38,6 @@ code {
 }
 
 .landingContent {
-  padding-top: 100px;
   background-color: rgba(255, 255, 255, 0.9);
   height: 100%;
   width: 100%;
@@ -47,6 +47,8 @@ code {
 .logo {
   font-size: 40px !important;
   padding-left: 20px;
+  color: rgba(255, 255, 255, 0.95);;
+  text-decoration: inherit;
 }
 
 .topBarWrapper {
@@ -71,4 +73,75 @@ code {
   font-size: 15;
   color: rgba(255, 255, 255, 0.7);
   font-weight: normal;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.nav-link:hover {
+  color: rgba(132, 151, 255, 0.192);
+  text-shadow: 2px 2px #ffffff;
+}
+
+.portfolioLinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolioLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.linkImage {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(2, 0, 15, 0.7);
+  
+}
+
+.aboutHeader {
+  font-size: 30px;
+  padding: 100px;
+  color: rgba(255,255,255,.9);
+}
+
+.aboutBackground {
+  max-height: 300px;
+}
+
+.founderBiosHeader {
+  font-size: 30px;
+  padding: 100px;
+  color: rgba(255,255,255,.9);
+}
+
+.founderBioHeader {
+  font-size: 24px;
+  padding: 100px;
+  color: rgba(255,255,255,.9);
+}
+
+.founderBio {
+  font-size: 14px;
+}
+
+.footer {
+  background-color: rgb(0,0,0);
+  min-height: 100px;
+  display: flex;
+}
+
+.socialLinks {
+  display: flex;
 }

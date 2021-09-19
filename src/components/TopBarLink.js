@@ -1,11 +1,12 @@
 import React from "react"
+import {Link} from 'react-router-dom'
 
 const TopBarLink = ({ name }) => {
 
 
   return (
     <div className="topBarLink">
-        <a> {name} </a>
+        <Link to={`${name}`}  className="nav-link" > {name}</Link>
     </div>
   )
 }
