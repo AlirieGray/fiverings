@@ -5,8 +5,7 @@ import TopBarLink from "./components/TopBarLink"
 import LandingPage from "./components/LandingPage"
 import AboutPage from "./components/AboutPage"
 import { Route, Switch } from "react-router-dom/cjs/react-router-dom";
-//import Content from "./components/Content"
-//import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +21,7 @@ class App extends Component {
           <TopBar />
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/about" component={AboutPage} />
+          <Footer />
         </div>
       </Switch>
     )

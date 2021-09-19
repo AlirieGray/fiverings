@@ -1,11 +1,14 @@
 import React from "react"
 
-const AboutPage = ({name, bio}) => {
+const AboutPage = ({name, bio, imgSrc}) => {
 
-  
     return (
         <div className="founderBio"> 
-            <div> </div>
+            <img className="portrait" src={imgSrc} />
+            <div>
+                <div className="founderBioHeader"> {name} </div>
+                <div className="founderBio"> {bio} </div>
+            </div>
         </div>
   )
 }
