@@ -11,9 +11,11 @@ const PortfolioLinks = () => {
 
   return (
     <div className='portfolioLinks'>
+      <div className='portfolioLinksWrapper'>
         {links.map(function(name, index){
           return <PortfolioLink key={index} name={name} imgLink={imgLinks[index]}/>;
         })}
+        </div>
     </div>
   )
 }
