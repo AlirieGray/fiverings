@@ -12,18 +12,18 @@ const LandingPage = () => {
 
   return (
     <div className="landingContent">
-      <Carousel showArrows={true} showThumbs={false} autoPlay={true} infiniteLoop={true}> 
+      <Carousel showArrows={true} showThumbs={false} autoPlay={true}  infiniteLoop={true} > 
         <div>
-          <img src={imgOne} />
-          <p className="legend">Item One</p>
+          <img src={imgOne} className="carouselImg" />
+          <p className="legend">ITEM ONE</p>
         </div>
         <div>
-          <img src={imgTwo}/>
-          <p className="legend">Item Two</p>
+          <img src={imgTwo} className="carouselImg"/>
+          <p className="legend">ITEM TWO</p>
         </div>
         <div>
-          <img src={imgThree} />
-          <p className="legend">Item Three</p>
+          <img src={imgThree} className="carouselImg" />
+          <p className="legend">ITEM THREE</p>
         </div>
       </Carousel>
 
