@@ -25,6 +25,8 @@ code {
   background-color: rgba(0,0,0,.1);
   width: 100%;
   margin: 0;
+  min-height: 100%;
+  flex: 1;
 }
 
 .topBar {
@@ -41,10 +43,81 @@ code {
 }
 
 .landingContent {
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 100%;
+  background-color: rgb(0, 0, 15);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
   width: 100%;
-  margin: 0px;
+  justify-content: center;
+}
+
+.landingHeader {
+  height: 280px;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Candara', 'Roboto',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  color: rgb(255,255,255);
+}
+
+
+.five {
+  font-size: 205px;
+}
+
+.rings {
+  text-align: left;
+  padding-top: 64px;
+  padding-left: 10px;
+  font-size: 78px;
+}
+
+.landingLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33%;
+  width: 300px;
+  margin-left: 88px;
+}
+
+.landingLink {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgba(255, 255, 255, .8);
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.landingLink:hover {
+  color: rgb(255,255,255);
+}
+
+.landingLink:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -.5rem;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background-color: rgba(255, 255, 255, .8);
+  margin: 0 auto;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.landingLink:hover:after {
+  width: 80%;
+  background: rgb(255, 255, 255);
 }
 
 .logo {
@@ -72,8 +145,8 @@ code {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1080px;
-  max-width: 100%;
+  width: 1580px;
+  max-width: 90%;
   padding: 10px;
   margin: 0 auto;
 }
@@ -124,42 +197,63 @@ code {
   }
 }
 
-.carouselImg {
-  max-height: 800px;
-  filter: contrast(70%);
+.mainImgWrapper {
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgb(41, 41, 50);
 }
 
-.legend {
+.mainImg {
+  max-height: 810px;
+  filter: contrast(70%);
+  margin: 0;
+  width: 100%;
+}
+
+.mainPageAbout {
+  background-color: rgb(41, 41, 50);
+  color: rgba(255,255,255,.9);
+  padding: 100px;
+  padding-top: 60px;
+}
+
+.legendHeader {
   color: rgb(255, 255, 255) !important;
   position: absolute !important;
-  top: 100px;
-  height: 150px;
+  top: 70px;
+  left: 100px;
   font-size: 88px !important;
   text-align: left !important;
-  background: none !important;
+  background-color: rgba(0,0,0,.25);
+  padding: 25px;
+  min-height: 170px;
+  width: 70%;
+  border-radius: 20px;
   opacity: 1 !important;
-  font-family: 'Impact';
+  font-family: -apple-system, BlinkMacSystemFont, 'Impact', 'Oswald', sans-serif;
 }
 
-.legend::after {
+.legendHeader::after {
   content: "Descriptive text: Merry alone do it burst me songs. Sorry equal charm joy her those folly ham.";
   font-size: 20px !important;
   font-weight: bolder;
-  font-family: 'Yu Gothic Light' !important;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Yu Gothic Light', 'Roboto', sans-serif !important;
   position: absolute !important;
   top: 120px;
-  left: 10px;
+  left: 25px;
 }
 
 @media (max-width: 700px) {
-  .legend {
+  .legendHeader {
     font-size: 36px !important;
     top: 0px;
+    left: 10px;
   }
 
-  .legend::after {
+  .legendHeader::after {
     top: 70px;
-    left: 10px;
+    left: 25px;
   }
 }
 
@@ -171,7 +265,7 @@ code {
 .aboutContent {
   display: flex;
   flex-direction: column;
-  background-color: rgb(41, 41, 50);
+  background-color: rgb(15, 15, 25);
 }
 
 .aboutWrapper {
@@ -246,7 +340,7 @@ hr {
 }
 
 .footer {
-  background-color: rgba(0,0,0,.95);
+  background-color: rgb(0,0,0);
   color: rgba(255,255,255, .7);
   min-height: 75px;
   padding-left: 50px;
@@ -281,7 +375,7 @@ hr {
   display: flex;
   flex-direction: column;
   background-color: rgb(41, 41, 50);
-  height: calc(100vh - 125px);
+  min-height: calc(100vh - 125px);
 }
 
 @media (max-width: 700px) {

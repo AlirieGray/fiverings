@@ -27,7 +27,7 @@ const TopBarLinks = ({open}) => {
   return (
     <StyledWrapper open={open}>
       <TopBarLink name="About"/>
-      <TopBarLink name="Portfolio"/>
+      {/* <TopBarLink name="Portfolio"/> */}
       <TopBarLink name="Blog"/>
       <TopBarLink name="Contact"/>
     </StyledWrapper>

@@ -1,6 +1,12 @@
 import React from "react"
+import { useLocation } from 'react-router-dom'
 
 const Footer = () => {
+  const location = useLocation()
+  if (location.pathname == '/') {
+    return <div />
+  }
+
   return (
     <div className="footer">
       <div className="footerContainer"> 
