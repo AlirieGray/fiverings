@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom'
 import Burger from './Burger'
 import { useLocation } from 'react-router-dom'
 import '../styles/nav.css'
+
+
 const TopBar = () => {
   const location = useLocation()
   if (location.pathname == '/') {

@@ -1,6 +1,6 @@
 
 :root {
-  --shadowColor: #000000;
+  --shadowColor: #121212;
   --midtoneColor: #5716a2;
   --highlightColor: #b481ee;
   --accentColor: #58fcec;
@@ -39,73 +39,6 @@ code {
     monospace;
 }
 
-
-.mainImgWrapper {
-  padding: 0;
-  position: relative;
-  margin: 0 auto;
-  background-color: rgb(41, 41, 50);
-}
-
-
-
-/* .aboutContent {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--shadowColor);
-}
-
-.aboutWrapper {
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  color: rgba(255,255,255,.9);
-}
-
-.aboutHeader {
-  font-size: 30px;
-  margin-bottom: 50px;
-}
-
-.aboutBackground {
-  max-height: 140px;
-}
-
-.founderBiosHeader {
-  font-size: 30px;
-  color: rgba(255,255,255,.9);
-}
-
-.founderBioHeader {
-  font-size: 24px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.founderBio {
-  font-size: 14px;
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 1080px;
-}
-
-.aboutSection {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 700px) {
-  .founderBio {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .aboutWrapper {
-    padding: 50px;
-  }
-} */
 
 hr {
   border: 0;

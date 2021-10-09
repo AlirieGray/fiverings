@@ -1,9 +1,8 @@
 .aboutWrapper {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     justify-content: center;
-    height: 100%;
+    align-items: stretch;
     background-color: var(--shadowColor);
     color: rgb(255,255,255);
 }
@@ -11,4 +10,47 @@
 .aboutContent {
     padding-top: var(--topBarHeight);
     width: 1080px;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
+.aboutHeader {
+    font-family: -apple-system, BlinkMacSystemFont, films, 'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
+    font-size: 44px;
+    padding-top: 15px;
+}
+
+.aboutSection {
+    width: 800px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+    .aboutContent {
+      width: 70%;
+    }
+  }
+
+
+  @media (max-width: 1080px) {
+    .aboutSection {
+        width: 70%;
+    }
+
+    .founderBio {
+        flex-direction: column !important;
+    }
+}
+
+.founderBio {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+   
+
+
+
