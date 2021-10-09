@@ -19,17 +19,28 @@ const LandingPage = () => {
 
 
   return (
-    <div className="landingContent">
-        <div className="landingHeader"> 
-          <div className="five"> 5 </div>
-          <div className="rings"> Rings Pictures </div>
-        </div>
-        <div className="landingLinks">
-            <Link to="About" className="landingLink"> About </Link>
-            <Link to="Blog" className="landingLink"> Blog </Link>
-            <Link to="Contact" className="landingLink"> Contact </Link>
-          </div>
+
+    <div className="constructionWrapper">
+      <div className="constructionContent">
+        <div className="constructionHeader"> Coming Soon </div>
+        <hr />
+        <div className="questions">Questions? Email: contact@5ringspictures.com </div>
+      </div>
     </div>
+
+
+
+    // <div className="landingContent">
+    //     <div className="landingHeader"> 
+    //       <div className="five"> 5 </div>
+    //       <div className="rings"> Rings Pictures </div>
+    //     </div>
+    //     <div className="landingLinks">
+    //         <Link to="About" className="landingLink"> About </Link>
+    //         <Link to="Blog" className="landingLink"> Blog </Link>
+    //         <Link to="Contact" className="landingLink"> Contact </Link>
+    //       </div>
+    // </div>
   )
 }
 
