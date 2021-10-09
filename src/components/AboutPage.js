@@ -17,9 +17,12 @@ const AboutPage = () => {
         <div className="aboutWrapper"> 
             <div className="aboutContent"> 
                 <div className="aboutSection"> 
-                <div className="aboutHeader"> 
-                    5 Rings Pictures is an American independent development and production company founded by Omar Samad, Samuel Limor, and Hannah Gomez to elevate and provide equity to marginalized communities through the promotion of diversity in storytelling both on and off the camera for television and film. 
+                    <div className="aboutHeader"> 
+                        5 Rings Pictures is an American independent development and production company founded by Omar Samad, Samuel Limor, and Hannah Gomez to elevate and provide equity to marginalized communities through the promotion of diversity in storytelling both on and off the camera for television and film. 
+                    </div>
                 </div>
+                <div className="aboutSection"> 
+                    testign
                 </div>
             </div>
 

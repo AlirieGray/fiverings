@@ -1,5 +1,5 @@
 .topBar {
-    height: 120px;
+    height: var(--topBarHeight);
     position: fixed;
     z-index: 1000;
     width: 100%;
@@ -8,7 +8,6 @@
     font-weight: bold;
     color: rgba(255, 255, 255, 0.9);
     font-size: 22px;
-    max-height: 100px;
   }
 
 
@@ -16,9 +15,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 1580px;
-    max-width: 90%;
-    padding: 10px;
+    width: 1080px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0 auto;
   }
   
@@ -44,3 +43,21 @@
     color: rgba(132, 151, 255, 0.192);
     text-shadow: 2px 2px #ffffff;
   }
+
+  .logo {
+    font-size: 44px !important;
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, films, 'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
+  }
+  
+  @media (max-width: 1200px) {
+    .logo {
+      font-size: 30px !important;
+    }
+
+    .topBarWrapper {
+      width: 70%;
+    }
+  }
+  
