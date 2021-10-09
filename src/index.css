@@ -1,4 +1,20 @@
 
+:root {
+  --shadowColor: #000000;
+  --midtoneColor: #5716a2;
+  --highlightColor: #b481ee;
+  --accentColor: #58fcec;
+}
+
+@font-face {
+  font-family: 'Alien';
+  src: local('Alien'), url(./fonts/alien-league-font/AlienLeagueRegular-9D3Z.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'films';
+  src: local('films'), url(./fonts/tall-films-font/TallFilmsExpanded-XqV9.ttf) format('truetype');
+}
 
 html, body {
   margin: 0;
@@ -11,7 +27,6 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
@@ -19,95 +34,52 @@ code {
     monospace;
 }
 
-.constructionWrapper {
+.landingWrapper {
   height: 100vh;
   width: 100%;
-  background-color: rgb(0,0,0);
+  background-color: var(--shadowColor);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 200px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Microsoft YaHei Light', 'Roboto', 'sans-serif';
-}
-
-.constructionContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(255,255,255);
-}
-
-hr {
-  width: 100% !important;
-  margin-bottom: 20px !important;
-}
-
-.contentWrapper {
-  height: 100%;
-}
-
-.questions {
-  color: rgba(255,255,255, .85);
-  font-style: italic;
-}
-
-.constructionHeader {
-  font-size: 68px;
-}
-
-.topBar {
-  height: 120px;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  background-color: rgba(0,0,0,.85);
-  border-bottom: 1px solid rgb(0,0,0);
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 22px;
-  max-height: 100px;
+  padding-top: 180px;
+  font-family: -apple-system, BlinkMacSystemFont, films, 'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Yu Gothic Light', 'Roboto', 'sans-serif'; */
 }
 
 .landingContent {
-  background-color: rgb(0, 0, 15);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-}
-
-.landingHeader {
-  height: 280px;
-  width: 300px;
-  display: flex;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Candara', 'Roboto',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
   color: rgb(255,255,255);
 }
 
-
-.five {
-  font-size: 205px;
+.landingHeader {
+  display: flex;
 }
 
-.rings {
-  text-align: left;
-  padding-top: 64px;
-  padding-left: 10px;
-  font-size: 78px;
+.five {
+  font-size: 180px;
+}
+
+.ringsPictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 80px;
+  padding-left: 15px;
+  line-height: 75px;
+}
+
+.landingContent hr {
+  width: 480px;
+  margin-bottom: 20px;
 }
 
 .landingLinks {
   display: flex;
+  width: 320px;
   justify-content: space-between;
-  margin-bottom: 33%;
-  width: 300px;
-  margin-left: 88px;
+  font-family: -apple-system, BlinkMacSystemFont,'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
 }
 
 .landingLink {
@@ -144,6 +116,55 @@ hr {
 .landingLink:hover:after {
   width: 80%;
   background: rgb(255, 255, 255);
+} 
+
+.constructionWrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--shadowColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 200px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Microsoft YaHei Light', 'Roboto', 'sans-serif';
+}
+
+.constructionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255,255,255);
+}
+
+.constructionContent hr {
+  width: 480px;
+  margin-bottom: 20px;
+}
+
+.contentWrapper {
+  height: 100%;
+}
+
+.questions {
+  color: rgba(255,255,255, .85);
+  font-style: italic;
+}
+
+.constructionHeader {
+  font-size: 68px;
+}
+
+.topBar {
+  height: 120px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgba(0,0,0,.85);
+  border-bottom: 1px solid rgb(0,0,0);
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  max-height: 100px;
 }
 
 .logo {
