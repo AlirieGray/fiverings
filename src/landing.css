@@ -1,0 +1,72 @@
+.landingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255,255,255);
+  }
+  
+  .landingHeader {
+    display: flex;
+  }
+  
+  .five {
+    font-size: 180px;
+  }
+  
+  .ringsPictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 80px;
+    padding-left: 15px;
+    line-height: 75px;
+  }
+  
+  .landingContent hr {
+    width: 480px;
+    margin-bottom: 20px;
+  }
+  
+  .landingLinks {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    font-family: -apple-system, BlinkMacSystemFont,'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
+  }
+  
+  .landingLink {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgba(255, 255, 255, .8);
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .landingLink:hover {
+    color: rgb(255,255,255);
+  }
+  
+  .landingLink:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -.5rem;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background-color: rgba(255, 255, 255, .8);
+    margin: 0 auto;
+  
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+  
+  .landingLink:hover:after {
+    width: 80%;
+    background: rgb(255, 255, 255);
+  } 
+  

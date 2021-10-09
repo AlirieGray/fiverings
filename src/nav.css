@@ -1,0 +1,46 @@
+.topBar {
+    height: 120px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(0,0,0,.85);
+    border-bottom: 1px solid rgb(0,0,0);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 22px;
+    max-height: 100px;
+  }
+
+
+.topBarWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1580px;
+    max-width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .topBarLinks {
+    text-align: center;
+    display: flex;
+  }
+  
+  .topBarLink {
+    display: inline;
+    margin: 10px;
+    font-size: 15;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: normal;
+  }
+  
+  .nav-link {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  .nav-link:hover {
+    color: rgba(132, 151, 255, 0.192);
+    text-shadow: 2px 2px #ffffff;
+  }

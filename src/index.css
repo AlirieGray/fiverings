@@ -46,203 +46,26 @@ code {
   /* font-family: -apple-system, BlinkMacSystemFont, 'Yu Gothic Light', 'Roboto', 'sans-serif'; */
 }
 
-.landingContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(255,255,255);
-}
 
-.landingHeader {
-  display: flex;
-}
 
-.five {
-  font-size: 180px;
-}
 
-.ringsPictures {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 80px;
-  padding-left: 15px;
-  line-height: 75px;
-}
 
-.landingContent hr {
-  width: 480px;
-  margin-bottom: 20px;
-}
-
-.landingLinks {
-  display: flex;
-  width: 320px;
-  justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont,'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
-}
-
-.landingLink {
-  text-decoration: none;
-  font-size: 24px;
-  color: rgba(255, 255, 255, .8);
-  position: relative;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.landingLink:hover {
-  color: rgb(255,255,255);
-}
-
-.landingLink:after {
-  position: absolute;
-  content: '';
-  height: 2px;
-  bottom: -.5rem;
-  left: 0;
-  right: 0;
-  width: 50%;
-  background-color: rgba(255, 255, 255, .8);
-  margin: 0 auto;
-
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-}
-
-.landingLink:hover:after {
-  width: 80%;
-  background: rgb(255, 255, 255);
-} 
-
-.constructionWrapper {
-  height: 100vh;
-  width: 100%;
-  background-color: var(--shadowColor);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 200px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Microsoft YaHei Light', 'Roboto', 'sans-serif';
-}
-
-.constructionContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(255,255,255);
-}
-
-.constructionContent hr {
-  width: 480px;
-  margin-bottom: 20px;
-}
-
-.contentWrapper {
-  height: 100%;
-}
-
-.questions {
-  color: rgba(255,255,255, .85);
-  font-style: italic;
-}
-
-.constructionHeader {
-  font-size: 68px;
-}
-
-.topBar {
-  height: 120px;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  background-color: rgba(0,0,0,.85);
-  border-bottom: 1px solid rgb(0,0,0);
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 22px;
-  max-height: 100px;
-}
 
 .logo {
   font-size: 44px !important;
   padding-left: 20px;
-  color: rgba(255, 255, 255, 0.95);;
+  color: rgba(255, 255, 255, 0.95);
   text-decoration: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, 'Candara', 'Roboto',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, films, 'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
 }
 
 @media (max-width: 700px) {
-  .landingContent {
-    margin-top: 100px;
-  }
-
   .logo {
     font-size: 30px !important;
   }
 }
 
 
-.topBarWrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1580px;
-  max-width: 90%;
-  padding: 10px;
-  margin: 0 auto;
-}
-
-.topBarLinks {
-  text-align: center;
-  display: flex;
-}
-
-.topBarLink {
-  display: inline;
-  margin: 10px;
-  font-size: 15;
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: normal;
-}
-
-.nav-link {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.nav-link:hover {
-  color: rgba(132, 151, 255, 0.192);
-  text-shadow: 2px 2px #ffffff;
-}
-
-.portfolioLinks {
-  padding: 20px;
-  width: 100%;
-  background-color: rgb(41, 41, 50);
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.portfolioLinksWrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 880px;
-  padding-right: 40px;
-}
-
-@media only screen and (max-width: 1080px) {
-  .portfolioLinksWrapper {
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-  }
-}
 
 .mainImgWrapper {
   padding: 0;
@@ -251,68 +74,12 @@ code {
   background-color: rgb(41, 41, 50);
 }
 
-.mainImg {
-  max-height: 810px;
-  filter: contrast(70%);
-  margin: 0;
-  width: 100%;
-}
 
-.mainPageAbout {
-  background-color: rgb(41, 41, 50);
-  color: rgba(255,255,255,.9);
-  padding: 100px;
-  padding-top: 60px;
-}
 
-.legendHeader {
-  color: rgb(255, 255, 255) !important;
-  position: absolute !important;
-  top: 70px;
-  left: 100px;
-  font-size: 88px !important;
-  text-align: left !important;
-  background-color: rgba(0,0,0,.25);
-  padding: 25px;
-  min-height: 170px;
-  width: 70%;
-  border-radius: 20px;
-  opacity: 1 !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Impact', 'Oswald', sans-serif;
-}
-
-.legendHeader::after {
-  content: "Descriptive text: Merry alone do it burst me songs. Sorry equal charm joy her those folly ham.";
-  font-size: 20px !important;
-  font-weight: bolder;
-  font-family:  -apple-system, BlinkMacSystemFont, 'Yu Gothic Light', 'Roboto', sans-serif !important;
-  position: absolute !important;
-  top: 120px;
-  left: 25px;
-}
-
-@media (max-width: 700px) {
-  .legendHeader {
-    font-size: 36px !important;
-    top: 0px;
-    left: 10px;
-  }
-
-  .legendHeader::after {
-    top: 70px;
-    left: 25px;
-  }
-}
-
-.linkImage {
-  max-width: 100px;
-  max-height: 100px;
-}
-
-.aboutContent {
+/* .aboutContent {
   display: flex;
   flex-direction: column;
-  background-color: rgb(15, 15, 25);
+  background-color: var(--shadowColor);
 }
 
 .aboutWrapper {
@@ -339,7 +106,7 @@ code {
 .founderBioHeader {
   font-size: 24px;
   margin-top: 10px;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }
 
 .founderBio {
@@ -365,7 +132,7 @@ code {
   .aboutWrapper {
     padding: 50px;
   }
-}
+} */
 
 hr {
   border: 0;
