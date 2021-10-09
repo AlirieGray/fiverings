@@ -10,8 +10,8 @@ import tea from '../images/tea.png'
 import sam from '../images/samuel.jpg'
 import FounderBio from './FounderBio'
 import {Link} from 'react-router-dom'
-import '../construction.css'
-import '../landing.css'
+import '../styles/construction.css'
+import '../styles/landing.css'
 
 const LandingPage = () => {
 

@@ -5,6 +5,7 @@ import omar from '../images/omar.jpg'
 import tea from '../images/tea.png'
 import sam from '../images/samuel.jpg'
 import FounderBio from './FounderBio'
+import '../styles/about.css'
 
 const AboutPage = () => {
     var founders = ["Omar Samad - Producer", "Samuel Limor - Producer", "Hannah Gomez - Head of Development"]
@@ -14,7 +15,13 @@ const AboutPage = () => {
     return (
 
         <div className="aboutWrapper"> 
-
+            <div className="aboutContent"> 
+                <div className="aboutSection"> 
+                <div className="aboutHeader"> 
+                    5 Rings Pictures is an American independent development and production company founded by Omar Samad, Samuel Limor, and Hannah Gomez to elevate and provide equity to marginalized communities through the promotion of diversity in storytelling both on and off the camera for television and film. 
+                </div>
+                </div>
+            </div>
 
         </div>
 

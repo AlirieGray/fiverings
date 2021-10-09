@@ -4,6 +4,17 @@
     align-items: center;
     color: rgb(255,255,255);
   }
+
+  .landingWrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--shadowColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 180px;
+    font-family: -apple-system, BlinkMacSystemFont, films, 'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
+  }
   
   .landingHeader {
     display: flex;
