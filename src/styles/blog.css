@@ -1,0 +1,25 @@
+.blogWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: calc(100% - 145px);
+    background-color: var(--shadowColor);
+    color: rgb(255,255,255);
+}
+
+.blogContent {
+    padding-top: var(--topBarHeight);
+    width: 1080px;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blogHeader {
+    padding-top: 50px;
+    font-size: 120px;
+    font-family: -apple-system, BlinkMacSystemFont, films, 'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
+}

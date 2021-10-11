@@ -14,10 +14,16 @@ const AboutPage = ({name, bio, title, imgSrc}) => {
                         {title} 
                     </div>
                 </div>
-                <div className="founderBio"> {bio} </div>
+                <div className="founderBioText"> {NewlineText(bio)} </div>
             </div>
         </div>
   )
 }
+
+function NewlineText(text) {
+    const newText = text.split('\n').map(str => <p>{str}</p>);
+    
+    return newText;
+  }
 
 export default AboutPage;

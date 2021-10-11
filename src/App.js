@@ -25,8 +25,8 @@ class App extends Component {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/contact" component={ContactPage} />
-          {/* <Route exact path="/portfolio" component={PortfolioPage} />
-          <Route exact path="/blog" component={BlogPage} /> */} 
+          {/* <Route exact path="/portfolio" component={PortfolioPage} /> */}
+          <Route exact path="/blog" component={BlogPage} /> 
           <Footer />
         </div>
       </Switch>

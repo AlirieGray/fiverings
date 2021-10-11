@@ -1,0 +1,44 @@
+.contactWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    min-height: calc(100% - 145px);
+    background-color: var(--shadowColor);
+    color: rgb(255,255,255);
+}
+
+.contactContent {
+    padding-top: var(--topBarHeight);
+    width: 1080px;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.emailWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.emailDescription {
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(255,255,255, .8);
+}
+
+.emailHeader {
+    font-size: 36px;
+    font-family: -apple-system, BlinkMacSystemFont, films, 'Yu Gothic Light', 'Roboto', 'Ubuntu', 'Droid Sans', 'sans-serif';
+}
+
+@media (max-width: 1200px) {
+    .contactContent {
+        width: 50%;
+    }
+}

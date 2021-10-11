@@ -1,11 +1,14 @@
 import React from "react"
-import bg from '../images/pattern.jpg'
+import '../styles/blog.css'
 
 const BlogPage = () => {
   return (
-    <div className="portfolioContent">
-        <img src={bg} className="aboutBackground" />
-        <div style={{fontSize:'40px', padding:'100px'}}> Blog Coming Soon! </div>
+    <div className="blogWrapper">
+      <div className="blogContent">
+        <div className="blogHeader">
+          Blog Coming Soon!
+        </div>
+      </div>
     </div>
   )
 }

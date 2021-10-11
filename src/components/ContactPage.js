@@ -1,6 +1,6 @@
 
 import React from "react"
-import bg from '../images/pattern.jpg'
+import '../styles/contact.css'
 
 const ContactPage = () => {
     var names = ['CONTACT', 'SUBMISSIONS', 'OMAR SAMAD', 'SAMUEL LIMOR', 'HANNAH GOMEZ']
@@ -9,20 +9,18 @@ const ContactPage = () => {
     'omar@5RingsPictures.com',
     'sam@5RingsPictures.com',
     'hannah@5RingsPictures.com']
-    var description = ['For general questions, etc.', 'For submissions', 'contact description', 'contact description', 'contact description']
+    var description = ['For general questions, etc.', 'Send us your stuff!', 'contact description', 'contact description', 'contact description']
+    
     return (
-        <div className="contactContent">
-            <img src={bg} className="aboutBackground" />
-            <div className="emailsWrapper">
-                <div>
+        <div className="contactWrapper">
+            <div className="contactContent">
                     {emails.map(function(email, index) {
-                        return <div>
+                        return <div className="emailWrapper">
                             <div className="emailHeader"> {names[index]}  </div>
                             <div className="emailDescription"> {description[index]} </div>
                             <div className="email">  {email} </div>
                         </div>
                     })}
-                </div>
             </div>
         </div>
         
