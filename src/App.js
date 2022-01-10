@@ -3,6 +3,7 @@ import TopBar from "./components/TopBar"
 import TopBarLinks from "./components/TopBarLinks"
 import TopBarLink from "./components/TopBarLink"
 import LandingPage from "./components/LandingPage"
+import LandingTesting from "./components/LandingTesting"
 import AboutPage from "./components/AboutPage"
 import ContactPage from './components/ContactPage'
 // import PortfolioPage from './components/PortfolioPage'
@@ -23,6 +24,8 @@ class App extends Component {
         <div>
           <TopBar />
           <Route exact path="/" component={LandingPage} />
+          <Route exact path="/homeTesting" component={LandingTesting} />
+          <Route exact path="/homeTestingLogoBike" component={LandingTesting} />
           <Route exact path="/aboutTesting" component={AboutPage} />
           <Route exact path="/contactTesting" component={ContactPage} />
           {/* <Route exact path="/portfolio" component={PortfolioPage} /> */}

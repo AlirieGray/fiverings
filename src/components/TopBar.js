@@ -8,14 +8,14 @@ import '../styles/nav.css'
 
 const TopBar = () => {
   const location = useLocation()
-  if (location.pathname == '/') {
+  if (location.pathname == '/' || location.pathname == "/homeTestingLogoBike" || location.pathname == "/homeTesting" ) {
     return <div />
   }
 
   return (
     <div className="topBar">
       <div className="topBarWrapper">
-        <Link to="/" className="logo"> 5 Rings Pictures </Link>
+        <Link to="/homeTesting" className="logo"> 5 Rings Pictures </Link>
         <Burger />
         
       </div>

@@ -4,7 +4,7 @@ import '../styles/footer.css'
 
 const Footer = () => {
   const location = useLocation()
-  if (location.pathname == '/') {
+  if (location.pathname == '/' || location.pathname == "/homeTesting" || location.pathname == "/homeTestingLogoBike") {
     return <div />
   }
 

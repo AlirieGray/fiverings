@@ -9,7 +9,7 @@ const ContactPage = () => {
     'omar@5RingsPictures.com',
     'sam@5RingsPictures.com',
     'hannah@5RingsPictures.com']
-    var description = ['For general questions, etc.', 'Send us your stuff!', 'contact description', 'contact description', 'contact description']
+    var description = ['For general questions, etc.', 'Send us your stuff!', 'Founder, Executive Producern', 'Founder, Executive Producer', 'Development, Literary Scouting & Acquisitions']
     
     return (
         <div className="contactWrapper">

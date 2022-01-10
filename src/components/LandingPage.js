@@ -11,7 +11,7 @@ const LandingPage = () => {
     <div className="constructionWrapper">
       <div className="constructionContent">
         <div className="constructionHeader"> Coming Soon </div>
-        <hr />
+        <hr style={{borderTop: "1px solid rgb(255,255,255)"}}/>
         <div className="questions">Questions? Email: contact@5ringspictures.com </div>
       </div>
     </div>
